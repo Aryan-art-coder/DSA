@@ -1,0 +1,25 @@
+using System;
+using System.Threading;
+
+namespace Aryan
+{
+    public class Account
+    {
+        public int count(int n)
+        {
+            return (int)Math.Sqrt(n);
+        }
+    }
+
+    public class Account1
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Enter the number of bulbs ");
+            int n = int.Parse(Console.ReadLine());
+            Account a1 = new Account();
+            int b=a1.count( n);
+            Console.WriteLine("Number of bulbs that are on : " + b);
+        }
+    }
+}
