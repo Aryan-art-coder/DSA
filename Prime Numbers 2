@@ -1,0 +1,29 @@
+Q> enter two numbers and count prime numbers between them:---
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of l: ");
+        int l = sc.nextInt();
+        System.out.print("Enter the value of r: ");
+        int r = sc.nextInt();
+        int count=0;
+        
+        for(int i=l;i<=r;i++){
+            boolean num=true;
+        for(int j=2;j<=i/2;j++){
+            if(i%j==0){
+                num=false;
+                break;
+            }
+            if(num==true){
+          
+            count++;
+            
+        }
+        }
+        }   
+        System.out.print(count);
+        
+    }
+}
