@@ -1,0 +1,25 @@
+Q4. Remove Duplicates from Sorted Array Input: nums = [0,0,1,1,1,2,2,3,3,4] 
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        int[] arr2 = new int[arr.length];  
+        int index = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1 || arr[i] != arr[i + 1]) {
+                arr2[index] = arr[i];
+                index++;
+            }
+        }
+ 
+      for (int i = 0; i < index; i++) {
+           if (i > 0) {
+                System.out.print(", ");  
+            }
+            System.out.print(arr2[i]);}
+    }
+}
+
+   
